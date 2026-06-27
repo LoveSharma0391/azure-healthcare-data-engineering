@@ -1,0 +1,25 @@
+{
+	"name": "TR_Claims_File_Arrival",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "PL_CSV_To_Landing",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/sftp/blobs/claims/",
+			"blobPathEndsWith": ".csv",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/4b5fd168-baae-440f-aafa-7bc715c82b99/resourceGroups/rg-healthcare-dev/providers/Microsoft.Storage/storageAccounts/sthealthrcmdev01",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}

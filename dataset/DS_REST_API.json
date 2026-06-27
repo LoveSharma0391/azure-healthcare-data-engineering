@@ -1,0 +1,24 @@
+{
+	"name": "DS_REST_API",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_REST_Function",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"Endpoint": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "RestResource",
+		"typeProperties": {
+			"relativeUrl": {
+				"value": "@dataset().Endpoint",
+				"type": "Expression"
+			}
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

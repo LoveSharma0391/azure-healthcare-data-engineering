@@ -1,0 +1,28 @@
+{
+	"name": "DS_SFTP_Delete",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_ADLS",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"FileName": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().FileName",
+					"type": "Expression"
+				},
+				"folderPath": "claims",
+				"fileSystem": "sftp"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

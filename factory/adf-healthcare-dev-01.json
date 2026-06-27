@@ -1,0 +1,15 @@
+{
+	"name": "adf-healthcare-dev-01",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "1b4fdd26-5d55-49f4-9345-f1ed7b9b2616",
+		"tenantId": "04991876-d75e-45ee-9116-7351e864e489"
+	}
+}

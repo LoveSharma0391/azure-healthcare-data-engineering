@@ -1,0 +1,13 @@
+{
+	"name": "LS_HTTP_Function",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "HttpServer",
+		"typeProperties": {
+			"url": "https://func-healthcare-dev-baeqdeg7gsedftdf.centralindia-01.azurewebsites.net",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous"
+		}
+	}
+}
