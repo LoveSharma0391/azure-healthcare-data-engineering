@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adf-healthcare-dev-01"
+		},
+		"LS_AzureSQL_password": {
+			"value": ""
+		},
+		"LS_ADLS_properties_typeProperties_url": {
+			"value": "https://sthealthrcmdev01.dfs.core.windows.net/"
+		},
+		"LS_AzureSQL_properties_typeProperties_server": {
+			"value": "sql-healthcare-dev-01.database.windows.net"
+		},
+		"LS_AzureSQL_properties_typeProperties_database": {
+			"value": "EMR_DB"
+		},
+		"LS_AzureSQL_properties_typeProperties_userName": {
+			"value": "sqladmin"
+		},
+		"LS_HTTP_Function_properties_typeProperties_url": {
+			"value": "https://func-healthcare-dev-baeqdeg7gsedftdf.centralindia-01.azurewebsites.net"
+		},
+		"LS_REST_Function_properties_typeProperties_url": {
+			"value": "https://func-healthcare-dev-baeqdeg7gsedftdf.centralindia-01.azurewebsites.net"
+		},
+		"TR_Claims_File_Arrival_properties_typeProperties_scope": {
+			"value": "/subscriptions/4b5fd168-baae-440f-aafa-7bc715c82b99/resourceGroups/rg-healthcare-dev/providers/Microsoft.Storage/storageAccounts/sthealthrcmdev01"
+		}
+	}
+}
